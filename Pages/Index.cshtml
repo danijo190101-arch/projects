@@ -1,0 +1,46 @@
+@page
+@{
+    ViewData["Title"] = "Knowledge Base";
+}
+
+<section class="hero">
+    <h1>Knowledge Base</h1>
+    <form class="search-wrap" role="search">
+        <i class="bi bi-search"></i>
+        <input type="text" placeholder="Search articles..." aria-label="Search articles" />
+        <button type="submit">Search</button>
+    </form>
+</section>
+
+<section class="cards-grid" aria-label="Knowledge categories">
+    <article class="kb-card">
+        <i class="bi bi-gear-wide-connected"></i>
+        <h2>Manufacturing</h2>
+        <p>Production workflows, inventory movement, and process documentation.</p>
+    </article>
+    <article class="kb-card">
+        <i class="bi bi-building"></i>
+        <h2>Operations</h2>
+        <p>Operational best practices, platform setup, and team onboarding guides.</p>
+    </article>
+    <article class="kb-card">
+        <i class="bi bi-bank"></i>
+        <h2>Taxation</h2>
+        <p>Tax filing guidance, compliance updates, and reporting standards.</p>
+    </article>
+    <article class="kb-card">
+        <i class="bi bi-calculator"></i>
+        <h2>Accounting</h2>
+        <p>Accounting entries, reconciliations, and financial statement resources.</p>
+    </article>
+    <article class="kb-card">
+        <i class="bi bi-diagram-3"></i>
+        <h2>Qtech</h2>
+        <p>Product release notes, troubleshooting, and internal platform FAQs.</p>
+    </article>
+    <article class="kb-card">
+        <i class="bi bi-graph-up-arrow"></i>
+        <h2>Analytics</h2>
+        <p>Dashboards, KPI tracking, and performance optimization insights.</p>
+    </article>
+</section>
