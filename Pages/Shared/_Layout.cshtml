@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Knowledge Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="top-header">
+        <div class="logo-block">
+            <div class="logo-mark">QA</div>
+            <div class="logo-text">
+                <strong>Quick Accounting</strong>
+            </div>
+        </div>
+        <nav class="project-filters" aria-label="Project filters">
+            <button class="filter-btn">Select Project <i class="bi bi-chevron-down"></i></button>
+            <button class="filter-btn">All Industries <i class="bi bi-chevron-down"></i></button>
+        </nav>
+        <nav class="header-links" aria-label="Secondary navigation">
+            <a href="#">Support</a>
+            <a class="active" href="#">Knowledge Base</a>
+            <a href="#">FAQs</a>
+            <a href="#">Video Tutorial</a>
+            <a href="#">Release Notes</a>
+            <a href="#">Contact Support</a>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <section>
+            <h3>QTECH BUSINESS SOLUTIONS, INC.</h3>
+            <p>Qtech is a trusted name among hundreds of business owners across the Philippines with over 1,500 POS systems installed nationwide.</p>
+        </section>
+        <section>
+            <h3>TECHNOLOGIES</h3>
+            <ul>
+                <li>C# .NET Framework</li>
+                <li>SQL Server</li>
+                <li>Azure DevOps</li>
+            </ul>
+        </section>
+        <section>
+            <h3>USEFUL LINKS</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </section>
+        <section>
+            <h3>CONTACT</h3>
+            <ul class="contact-list">
+                <li><i class="bi bi-geo-alt"></i> L3 B4 Birch St., Lovely Meadows, Tayabas City, Philippines</li>
+                <li><i class="bi bi-telephone"></i> +63 49 123 4567</li>
+                <li><i class="bi bi-envelope"></i> wecare@qtechbsi.com</li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
